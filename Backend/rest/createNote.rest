@@ -1,0 +1,4 @@
+POST http://localhost:3000/addNote
+Content-Type: application/json
+
+{"Course_Title":"Java"}

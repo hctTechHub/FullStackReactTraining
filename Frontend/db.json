@@ -1,0 +1,29 @@
+{
+  "notes": [
+    {
+      "name": "Adeyemi Temidayo",
+      "phoneNo": "09061618150",
+      "location": "Ibadan",
+      "id": "-Q2Kevp0lWE"
+    },
+    {
+      "name": "Oladele Yemisi",
+      "phoneNo": "09061618150",
+      "location": "Bodija",
+      "id": "klJTj_0wgc8"
+    },
+    {
+      "name": "Muyima Bamidele",
+      "phoneNo": "09061618150",
+      "location": "Ibadan",
+      "id": "DXn-3jIV-Lo"
+    },
+    {
+      "name": "Olukole Oluwakemi",
+      "phoneNo": "08027595286",
+      "location": "Ibadan",
+      "id": "iqXzHVl667s"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
