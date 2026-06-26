@@ -9,7 +9,7 @@ const App = () => {
     const [contacts,setContacts] = useState([]);
     useEffect(() => {
       console.log(contacts)
-      axios.get(baseURL).then(
+      axios.get(`${baseURL}/api/notes`).then(
         (response) => {
             setContacts(response.data);
         }
