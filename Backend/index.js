@@ -10,6 +10,12 @@ app.use(cors());
 app.get("/api/notes",(request,response) => {
     response.send(notesObj);
 })
+app.post("/api/addNotes",(request,response) => {
+    const body = request.body;
+    notesObj.concat(body);
+    response.status(204).end();
+
+});
 
 app.listen(PORT,()=>{
     console.log(`Server started on ${PORT}`)

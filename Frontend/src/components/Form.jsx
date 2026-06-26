@@ -2,6 +2,8 @@
 
 import {useState,useEffect} from 'react';
 import axios from 'axios';
+const baseUrl = import.meta.env.VITE_BACKEND_URL;
+
 
 const initialFormData = {
     name:'',
@@ -27,7 +29,7 @@ const Form = ({listContacts,updateListContacts,contacts,updateContacts}) => {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:3000/notes",formData)
+        axios.post(`${baseUrl}/api/addNotes`,formData)
         .then((response) => {
            const newObj = contacts.concat(response.data);
             updateListContacts(newObj);
