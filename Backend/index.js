@@ -12,8 +12,7 @@ app.get("/api/notes",(request,response) => {
 })
 app.post("/api/addNotes",(request,response) => {
     const body = request.body;
-    notesObj.concat(body);
-    response.status(204).end();
+    response.status(201).send(body);
 
 });
 

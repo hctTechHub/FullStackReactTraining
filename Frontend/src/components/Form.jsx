@@ -31,7 +31,9 @@ const Form = ({listContacts,updateListContacts,contacts,updateContacts}) => {
         e.preventDefault();
         axios.post(`${baseUrl}/api/addNotes`,formData)
         .then((response) => {
+            console.log(response);
            const newObj = contacts.concat(response.data);
+           console.log(newObj);
             updateListContacts(newObj);
             updateContacts(newObj);
             setFormData(initialFormData);
