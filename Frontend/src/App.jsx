@@ -3,7 +3,7 @@ import {useEffect,useState} from 'react';
 import axios from 'axios';
 import DisplayGUI from "./components/DisplayGUI";
 
-const baseURL = "/api/notes";
+const baseURL = import.meta.env.VITE_BACKEND_URL;
 const App = () => {
 
     const [contacts,setContacts] = useState([]);
